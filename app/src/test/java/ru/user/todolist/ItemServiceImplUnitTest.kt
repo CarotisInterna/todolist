@@ -40,4 +40,22 @@ class ItemServiceImplUnitTest {
     }
 
 
+    @Test
+    @Throws(Exception::class)
+    fun test002_whenUpdateThenCorrect() {
+        val expected = Item(
+            text = "new new item",
+        )
+        itemServiceImpl.insert(expected)
+
+        val id = repository.counter.get()
+
+        expected.id = id
+        itemServiceImpl.update(expected)
+        val actual = repository.getById(id)
+
+        assertNotNull(actual)
+        assertEquals(expected.text, actual.text)
+    }
+
 }
