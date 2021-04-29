@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+                android:layout_width="422dp"
+                android:layout_height="234dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                tools:context="ru.user.todolist.view.EditActivity">
+
+            <EditText
+                    android:id="@+id/item_text"
+                    android:layout_width="361dp"
+                    android:layout_height="225dp"
+                    android:autofillHints=""
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:textSize="30sp"
+                    tools:targetApi="o"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel" />
+        </LinearLayout>
+        <ProgressBar
+                android:id="@+id/save_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

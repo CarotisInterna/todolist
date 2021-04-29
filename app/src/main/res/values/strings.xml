@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="add">Создать</string>
+    <string name="edit_item">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="no_items">У вас нет теĸущих задач</string>
+    <string name="cancel">Отмена</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="save">Сохранить</string>
+    <string name="delete_confirmation">Вы уверены, что хотите удалить элемент?</string>
+    <string name="no_changes">Для сохранения информации внесите изменения в задачу</string>
+    <string name="cannot_save">Не удалось сохранить, попробуйте снова</string>
+</resources>
