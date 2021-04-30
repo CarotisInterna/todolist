@@ -11,7 +11,7 @@ class ItemServiceImpl(private val repository: ItemRepository) :
     ItemService {
 
     override fun getAll(): List<Item> {
-        return repository.getAll(10)
+        return repository.getAll(11)
     }
 
     override fun insert(item: Item) {
